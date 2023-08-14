@@ -5,7 +5,7 @@ let Child= (props)=>{
         <div>
         <button onClick={()=>{props.set(true)}}>Show Modal</button>
         {props.item && <div>
-            <h1>Modal Content</h1>
+            <h3>Modal Content</h3>
             <p>This is modal content.</p>
             </div>}
         </div>
