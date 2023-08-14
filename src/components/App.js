@@ -1,11 +1,14 @@
 
-import React from "react";
+import React,{useState} from "react";
 import './../styles/App.css';
+import Child from './Child'
 
 const App = () => {
+  let [showModa,SetshowModa]= useState(false)
   return (
-    <div>
-        {/* Do not remove the main div */}
+    <div class='parent'>
+      <h1>ParentComponent</h1>
+        {<Child set={SetshowModa} item={showModa}/>}
     </div>
   )
 }
